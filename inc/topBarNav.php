@@ -1,4 +1,59 @@
 <style>
+  /* Style for the navbar */
+.navbar {
+    background-color: #563d7c; /* Darker background color */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand .brand-text {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 0.5%29" stroke-width="2" linecap="round" linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important; /* Gold color on hover */
+    background-color: #452f57; /* Slightly darker background on hover */
+    border-radius: 5px; /* Rounded corners for tabs */
+}
+
+/* Style for active link */
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ffd700; /* Gold underline for active link */
+}
+
+.nav-item {
+    position: relative;
+}
+
+/* Darken effect when cursor is near placeholder */
+.navbar-collapse::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.navbar:hover .navbar-collapse::before {
+    opacity: 1;
+}
+
   .user-img{
         position: absolute;
         height: 27px;
