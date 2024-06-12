@@ -33,7 +33,7 @@
 						<th>Date Created</th>
 						<th>Service</th>
 						<th>Description</th>
-						<th>Cost</th>
+						<th>Cost (RM)</th>
 						<th>Status</th>
 						<th>Action</th>
 					</tr>
